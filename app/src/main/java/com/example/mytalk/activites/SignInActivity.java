@@ -1,11 +1,10 @@
 package com.example.mytalk.activites;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.mytalk.R;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.mytalk.databinding.ActivitySignInBinding;
 
 public class SignInActivity extends AppCompatActivity {
@@ -23,5 +22,10 @@ public class SignInActivity extends AppCompatActivity {
     private void setListeners(){
         binding.textCreateNewAccount.setOnClickListener(v ->
                 startActivity(new Intent(getApplicationContext(),SignUpActivity.class)));
+
     }
+
+
+
+
 }
