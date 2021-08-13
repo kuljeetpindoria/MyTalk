@@ -41,6 +41,8 @@ public class SignUpActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         preferenceManager = new PreferenceManager(getApplicationContext());
         setListeners();
+
+        binding.inputName.setText("Data Binding");
     }
 
     private void setListeners(){

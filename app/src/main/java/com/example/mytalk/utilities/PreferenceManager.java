@@ -17,7 +17,7 @@ public class PreferenceManager {
         editor.apply();
     }
 
-    public Boolean getBoolean(String key, boolean b){
+    public Boolean getBoolean(String key){
         return sharedPreferences.getBoolean(key, false);
     }
 
@@ -36,4 +36,6 @@ public class PreferenceManager {
         editor.clear();
         editor.apply();
     }
+
+
 }
